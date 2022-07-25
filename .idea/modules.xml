@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DIO/Associacao/Associacao.iml" filepath="$PROJECT_DIR$/DIO/Associacao/Associacao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIO/Funcionarios/Funcionarios.iml" filepath="$PROJECT_DIR$/DIO/Funcionarios/Funcionarios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIO/Interface/Interface.iml" filepath="$PROJECT_DIR$/DIO/Interface/Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Leraning_Java.iml" filepath="$PROJECT_DIR$/.idea/Leraning_Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIO/Oi/Oi.iml" filepath="$PROJECT_DIR$/DIO/Oi/Oi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIO/Ola/Ola.iml" filepath="$PROJECT_DIR$/DIO/Ola/Ola.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIO/Pacotes/Pacotes.iml" filepath="$PROJECT_DIR$/DIO/Pacotes/Pacotes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Triangulo/Triangulo.iml" filepath="$PROJECT_DIR$/Triangulo/Triangulo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIO/Veiculos/Veiculos.iml" filepath="$PROJECT_DIR$/DIO/Veiculos/Veiculos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIO/Visibilidade/Visibilidade.iml" filepath="$PROJECT_DIR$/DIO/Visibilidade/Visibilidade.iml" />
+    </modules>
+  </component>
+</project>
