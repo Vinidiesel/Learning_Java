@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Enter account holder: ");
         sc.nextLine();
         String holder = sc.nextLine();
-        System.out.println("Is there na initial deposit (y/n)? ");
+        System.out.println("Is there an initial deposit (y/n)? ");
         char initialDeposit = sc.next().charAt(0);
 
 
