@@ -1,5 +1,6 @@
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Locale;
 
 public class Main {
@@ -70,6 +71,41 @@ public class Main {
 
         System.out.println("d05 hora = "+ d05.getHour());
         System.out.println("d05 hora = "+ d05.getMinute());
+
+        System.out.println("------------------------------------------------------");
+
+        LocalDate pastWeekLocalDate = d04.minusDays(7);
+        LocalDate nextWeekLocalDate = d04.plusDays(7);
+        LocalDate nextYearLocalDate = d04.plusYears(7);
+
+
+        System.out.println("pasteWeekLocalDate = " + pastWeekLocalDate);
+        System.out.println("nextWeekLocalDate = " + nextWeekLocalDate);
+        System.out.println("nextYearLocalDate = " + nextYearLocalDate);
+
+        LocalDateTime pastWeekLocalDateTime = d05.minusDays(7);
+        LocalDateTime nextWeekLocalDateTime = d05.plusDays(7);
+
+        System.out.println("");
+        System.out.println("pasteWeekLocalDateTime = " + pastWeekLocalDateTime);
+        System.out.println("nextWeekLocalDateTime = " + nextWeekLocalDateTime);
+
+        Instant pastWeekInstant = d06.minus(7, ChronoUnit.DAYS);
+        Instant nextWeekInstant = d06.plus(7,ChronoUnit.DAYS);
+
+        System.out.println("");
+        System.out.println("pastWeekInstant = " + pastWeekInstant);
+        System.out.println("nextWeekInstant = " + nextWeekInstant);
+
+        Duration t1 = Duration.between(pastWeekLocalDate.atStartOfDay(), d04.atStartOfDay());
+        Duration t2 = Duration.between(pastWeekLocalDateTime, d05);
+        Duration t3 = Duration.between(pastWeekInstant, d06);
+        Duration t4 = Duration.between(d06, pastWeekInstant);
+
+        System.out.println("");
+        System.out.println("t1 dias = " + t1.toDays());
+        System.out.println("t2 dias = " + t2.toDays());
+        System.out.println("t3 dias = " + t3.toDays());
 
     }
 }
