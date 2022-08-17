@@ -2,12 +2,14 @@ package entities;
 
 import entities.enums.OrderStatus;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Order {
 
+    private  SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     private Date moment;
     private OrderStatus status;
 
