@@ -34,6 +34,9 @@ public class Main {
             System.out.println("Update!");
         }
          */
+
+        /*
+        SOBREPOSIÇÃO
         Account acc1 = new Account(1001,"Alex",1000.0);
         acc1.withdraw(200.0);
         System.out.println(acc1.getBalance());
@@ -45,5 +48,16 @@ public class Main {
         Account acc3 = new BusinessAccount(1003,"Vinicius",1000.0,500.0);
         acc3.withdraw(200);
         System.out.println(acc3.getBalance());
+         */
+
+        //POLIMORFISMO
+        Account x = new Account(1020,"Alex",1000.0);
+        Account y = new SavingsAccount(1021,"Maria",1000.0,0.01);
+
+        x.withdraw(50.0);
+        y.withdraw(50.0);
+
+        System.out.println(x.getBalance());
+        System.out.println(y.getBalance());
     }
 }
