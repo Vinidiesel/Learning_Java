@@ -3,7 +3,7 @@ package entities;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class UsedProduct extends Product{
+public final class UsedProduct extends Product{
 
     private static SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
     private Date manufactureDate;
