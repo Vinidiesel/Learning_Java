@@ -43,7 +43,7 @@ public class Main {
         System.out.println();
         System.out.println("SHAPE AREAS:");
         for (Shape shape: list) {
-            System.out.println(String.format("%.2f", shape.area()));
+            System.out.printf("%.2f%n", shape.area());
         }
     }
 }
