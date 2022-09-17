@@ -26,18 +26,18 @@ public class Product {
         this.price = price;
     }
 
-    public static boolean staticProductPredicate(Product p){
-        return  p.getPrice() >= 100.00;
-    }
-    public boolean nonStaticProductPredicate(){
-            return price >= 100.00;
+   public static void staticPriceUpdate(Product p){
+        p.setPrice(p.getPrice() * 1.1);
+   }
+    public void nonStaticPriceUpdate(){
+        price = price * 1.1;
     }
 
     @Override
     public String toString() {
         return "Product: " +
                 "name='" + name + '\'' +
-                ", price=" + price +
+                ", price=" + String.format("%.2f",price) +
                 '}';
     }
 }
